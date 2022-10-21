@@ -30,7 +30,7 @@ def test_json():			     #We use RESTer to send a POST request
 		#print(data)
 		
 		#Indexing the dictionary returned by request.json():
-		data_id = data['Id']  
+		data_id = data['Id'] #Thanks to theDonKim!!  
 		data_customer = data['Customer']
 		data_quantity = data['Quantity']
 		data_price = data['Price']
@@ -50,7 +50,7 @@ def test():					# We use this route for the webform
 		print(content_type) #Print the content_type:
 				    # application/x-www-form-urlencoded
 		
-		# Use the request.form.get() method to parse the PSOT request from the webform
+		# Use the request.form.get() method to parse the POST request from the webform
 		data_id = request.form.get('ID')
 		data_customer = request.form.get('Customer')
 		data_quantity  = request.form.get('Quantity')
